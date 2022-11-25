@@ -7,10 +7,15 @@
     font-family: Verdana;
 }
 
+body{
+    background-color: var(--defaultBg);
+}
+
 :root {
     --bgcolor: rgb(27, 26, 26);
     --textdarkbgcolor:rgb(248, 248, 248);
     --red_highlights:rgb(243, 94, 94);
+    --defaultBg: rgb(104, 104, 104);
 }
 
 
