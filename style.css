@@ -65,6 +65,7 @@ body{
 
 .nav-links li:hover{
     background-color: var(--red_highlights);
+    transition: .6s;
 }
 
 .togglebtn{
@@ -116,9 +117,8 @@ body{
 .about{
     display: flex;
     padding: 100px 0;
-    margin-top: 90px;
-    margin-bottom: 40px;
     background-color: var(--bgcolor);
+    height: 100vh
 }   
 
 .profile{
@@ -164,7 +164,7 @@ body{
     border: 3px solid transparent;
     padding: 10px 25px;
     border-radius: 18px;
-    transition: .4s;
+    transition: .6s;
 }
 
 .click a{
@@ -173,7 +173,7 @@ body{
 }
 
 .click:hover{
-    background-color: var(--defaultBg);
+    background-color: var(--bgcolor);
     border: 3px solid var(--red_complement);
     cursor: pointer;
 }
@@ -188,15 +188,17 @@ body{
 }
 
 .education{
-    display: inline-block;
     width: 100%;
     padding: 100px 0;
     margin-top: 30px;
-    margin-bottom: 50px;
-    background-color: var(--bgcolor);
+    background-color: var(--defaultBg);
     color: var(--textdarkbgcolor);
+    display: block;
 }   
-
+.education h1{
+    font-size: 4.2rem;
+    text-align: center;
+}
 .education button{
     background-color: var(--red_complement);
     color: var(--textdarkbgcolor);
@@ -204,7 +206,7 @@ body{
     border: 3px solid transparent;
     padding: 10px 25px;
     border-radius: 18px;
-    transition: .4s;
+    transition: .6s;
 }
 
 .education a{
@@ -217,13 +219,23 @@ body{
     border: 3px solid var(--red_complement);
     cursor: pointer;
 }
-
+.school{
+    width: 20%;
+    padding: 2rem;
+    margin: .5rem;
+    background-color: aqua;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+}
 .schoolLogo{
     width: 233px;
     padding: 2%;
 }
-
-@media (max-width: 650px) {
+.school h3{
+    text-transform: uppercase;
+}
+@media screen and (max-width: 650px) {
     .togglebtn{
         display: flex;
     }
@@ -255,6 +267,15 @@ body{
     }
     .banner{
         height: 80vh;
+        width: 100%;
+    }
+    .banner-content{
+        width: 100%;
+
+    }
+    .banner-content h1{
+        font-size: 5rem;
+
     }
 
 }
