@@ -115,10 +115,12 @@ body{
 }
 
 .about{
-    display: flex;
+    display: grid;
+    width: 100%;
     padding: 100px 0;
     background-color: var(--bgcolor);
     height: 100vh
+
 }   
 
 .profile{
@@ -132,8 +134,7 @@ body{
 
 .profile img{
     width: 25rem;
-    border: 1px;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .about-text{
@@ -215,7 +216,7 @@ body{
 }
 
 .education button:hover{
-    background-color: var(--defaultBg);
+    background-color: var(--bgcolor);
     border: 3px solid var(--red_complement);
     cursor: pointer;
 }
@@ -223,7 +224,7 @@ body{
     width: 20%;
     padding: 2rem;
     margin: .5rem;
-    background-color: aqua;
+    background-color: var(--bgcolor);
     align-items: center;
     border-radius: 12px;
     text-align: center;
@@ -235,6 +236,40 @@ body{
 .school h3{
     text-transform: uppercase;
 }
+
+.skills{
+    width: 100%;
+    padding: 100px 0;
+    margin-top: 30px;
+    background-color: var(--bgcolor);
+    color: var(--textdarkbgcolor);
+    display: block;
+}   
+
+.skills h1{
+    font-size: 5rem;
+    text-align: right;
+    margin-right: 6rem;
+}
+
+.skill-container h3{
+    padding: 1rem;
+    font-size: 25px;
+}
+
+.skill-container{
+    background-color: var(--defaultBg);
+    width: 25%;
+    padding: 25px;
+    margin: 2rem;
+    text-align: center;
+}
+
+.skill-container img{
+    max-width: 100%;
+    width: 245px;
+}
+
 @media screen and (max-width: 650px) {
     .togglebtn{
         display: flex;
