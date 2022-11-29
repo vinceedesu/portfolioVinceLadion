@@ -17,6 +17,7 @@ body{
 
 :root {
     --bgcolor: rgb(27, 26, 26);
+    --header_footer:rgb(14, 13, 13);
     --textdarkbgcolor:rgb(248, 248, 248);
     --red_highlights:rgb(243, 94, 94);
     --red_complement:rgb(255,43,43);
@@ -25,7 +26,7 @@ body{
 
 
 .topnav{
-    background: var(--bgcolor);
+    background: var(--header_footer);
     width: 100%;
     align-items: center;
     display: flex;
@@ -115,7 +116,7 @@ body{
 }
 
 .about{
-    display: grid;
+    display: flex;
     width: 100%;
     padding: 100px 0;
     background-color: var(--bgcolor);
@@ -134,7 +135,7 @@ body{
 
 .profile img{
     width: 25rem;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .about-text{
@@ -271,6 +272,50 @@ body{
     width: 245px;
 }
 
+
+.footer{
+    text-align: center;
+    width: 100%;
+    background-color:var(--header_footer);
+    height: 150px;
+    position: absolute;
+
+}
+
+.div-social{
+    padding: 1rem;
+}
+
+.div-social p{
+    color: var(--textdarkbgcolor);
+    padding: 7px;
+    text-transform: capitalize;
+
+}
+
+.div-social img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.experiences{
+    width: 100%;
+    background-color: var(--defaultBg);
+}
+
+.experiences h1{
+    color: var(--textdarkbgcolor);
+    font-size: 74px;
+    margin-left: 50px;
+}
+
+.column{
+    text-align: center;
+    padding: 2rem;
+}
+
 @media screen and (max-width: 650px) {
     .togglebtn{
         display: flex;
@@ -313,5 +358,7 @@ body{
         font-size: 5rem;
 
     }
-
+    .about-text{
+        display: none;
+    }
 }
