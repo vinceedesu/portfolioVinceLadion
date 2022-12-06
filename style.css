@@ -162,6 +162,7 @@ body{
 .click{
     background-color: var(--red_complement);
     color: var(--textdarkbgcolor);
+    font-weight: 600;
     text-decoration: none;
     border: 3px solid transparent;
     padding: 10px 25px;
@@ -169,14 +170,15 @@ body{
     transition: .6s;
 }
 
-.click a{
+/* .click a{
     color: var(--textdarkbgcolor);
-    font-weight: 600;
-}
+    font-weight: 600; */
+
 
 .click:hover{
-    background-color: var(--bgcolor);
-    border: 3px solid var(--red_complement);
+    background-color: var(--textdarkbgcolor);
+    color: var(--bgcolor);
+    border: 3px solid var(--textdarkbgcolor);
     cursor: pointer;
 }
 
@@ -204,6 +206,7 @@ body{
 .education button{
     background-color: var(--red_complement);
     color: var(--textdarkbgcolor);
+    font-weight: 600;
     text-decoration: none;
     border: 3px solid transparent;
     padding: 10px 25px;
@@ -211,14 +214,11 @@ body{
     transition: .6s;
 }
 
-.education a{
-    color: var(--textdarkbgcolor);
-    font-weight: 600;
-}
 
 .education button:hover{
-    background-color: var(--bgcolor);
-    border: 3px solid var(--red_complement);
+    background-color: var(--textdarkbgcolor);
+    color: black;
+    /* border: 3px solid var(--red_complement); */
     cursor: pointer;
 }
 .school{
@@ -315,6 +315,38 @@ body{
     text-align: center;
     padding: 2rem;
 }
+
+.Box{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    border: 0;
+    padding: .75rem;
+    border-radius: 9px;
+    font-size: 25px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    /* opacity: 0; */
+    
+}
+
+.Box a{
+    text-decoration: none;
+    color: var(--bgcolor);
+}
+.Box:hover{
+    cursor: pointer;  
+    background-color: var(--red_complement); 
+    transition: .6s;
+    color: var(--textdarkbgcolor);
+}
+
+
 
 @media screen and (max-width: 650px) {
     .togglebtn{
