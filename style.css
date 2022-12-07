@@ -194,14 +194,15 @@ body{
 .education{
     width: 100%;
     padding: 100px 0;
-    margin-top: 30px;
     background-color: var(--defaultBg);
     color: var(--textdarkbgcolor);
-    display: block;
+    display: flex;
+    justify-content: center;
 }   
 .education h1{
     font-size: 4.2rem;
     text-align: center;
+
 }
 .education button{
     background-color: var(--red_complement);
@@ -229,7 +230,12 @@ body{
     align-items: center;
     border-radius: 12px;
     text-align: center;
+    
 }
+.school:hover{
+    z-index: 10;
+}
+
 .schoolLogo{
     width: 233px;
     padding: 2%;
@@ -240,17 +246,16 @@ body{
 
 .skills{
     width: 100%;
-    padding: 100px 0;
-    margin-top: 30px;
+    padding: 75px 0;
+    margin-top: 50px;
     background-color: var(--bgcolor);
     color: var(--textdarkbgcolor);
-    display: block;
+    display: flex;
+    justify-content: center ;
 }   
 
 .skills h1{
     font-size: 5rem;
-    text-align: right;
-    margin-right: 6rem;
 }
 
 .skill-container h3{
