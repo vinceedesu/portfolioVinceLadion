@@ -1,8 +1,11 @@
 # portfolio
  
-Good day here is my web portfolio expressing my creativity and skills in coding
+Good day here is my web portfolio expressing my creativity and my journey 
+to become a developer
 Give me feedback and
 follow my socials
+
+Still working on my personal website
 
 thank you
 
