@@ -193,26 +193,17 @@ body{
 
 .education{
     width: 100%;
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: var(--defaultBg);
     color: var(--textdarkbgcolor);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }   
 .education h1{
     font-size: 4.2rem;
     text-align: center;
 
-}
-.education button{
-    background-color: var(--red_complement);
-    color: var(--textdarkbgcolor);
-    font-weight: 600;
-    text-decoration: none;
-    border: 3px solid transparent;
-    padding: 10px 25px;
-    border-radius: 18px;
-    transition: .6s;
 }
 
 
@@ -223,13 +214,15 @@ body{
     cursor: pointer;
 }
 .school{
-    width: 429px;
+    width: 27%;
     padding: 2rem;
     margin: 2rem;
     background-color: var(--bgcolor);
     align-items: center;
     border-radius: 12px;
     text-align: center;
+    /* display: flex;
+    flex-wrap: wrap; */
     
 }
 /* .school:hover{
@@ -288,6 +281,7 @@ body{
 .skill-container img{
     max-width: 100%;
     width: 245px;
+    height: 325px;
 }
 
 
